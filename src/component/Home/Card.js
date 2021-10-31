@@ -1,10 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const Card = ({ product }) => {
   console.log(product);
   return (
-    <a
-      href="/name"
+    <Link
+      to="/name"
       className="flex h-36 border overflow-hidden items-center rounded"
     >
       <img src={product.imageSrc} alt="" className="w-36 h-full bg-gray-100" />
@@ -13,6 +14,6 @@ export const Card = ({ product }) => {
         <h6 className="text-sm text-gray-500">Lorem ipsum dolor sit.</h6>
         <h6 className="text-lg font-bold">$10</h6>
       </div>
-    </a>
+    </Link>
   );
 };

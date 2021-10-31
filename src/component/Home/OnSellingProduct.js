@@ -1,5 +1,6 @@
 import { ArrowRightIcon } from "@heroicons/react/outline";
 import React from "react";
+import { Link } from "react-router-dom";
 import ChairData from "../../ChairData.json";
 import img from "../../images/Woman.png";
 import { Card } from "./Card.js";
@@ -19,12 +20,12 @@ export const OnSellingProduct = () => {
               50%
             </p>
             <h6 className="text-white text-md font-bold">LIMITED TIME VALID</h6>
-            <a
-              href="#"
+            <Link
+              to="/product"
               className="text-white flex mx-20 my-4 text-xs text-bold"
             >
               SEE ALL PRODUCTS <ArrowRightIcon className="w-4 ml-1" />
-            </a>
+            </Link>
           </div>
         </div>
         <div className=" grid grid-cols-1 md:grid-cols-2 gap-4 mt-1 overflow-hidden h-full rounded-md ">

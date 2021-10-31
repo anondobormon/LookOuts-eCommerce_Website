@@ -1,5 +1,6 @@
 import { ArrowRightIcon } from "@heroicons/react/solid";
 import React from "react";
+import { Link } from "react-router-dom";
 import FakeData from "../../FakeData.json";
 import { ProductCard } from "../ProductCard/ProductCard";
 
@@ -116,15 +117,15 @@ export const Product = () => {
             <h2 className="text-2xl font-extrabold tracking-tight text-gray-900">
               New Arrival
             </h2>
-            <a
-              href="/product"
+            <Link
+              to="/product"
               className="text-md font-semibold hover:text-blue-600 flex items-center"
             >
               See All
               <span>
                 <ArrowRightIcon className="w-4 ml-2" />
               </span>
-            </a>
+            </Link>
           </div>
 
           <div className="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-5 xl:gap-x-8">
