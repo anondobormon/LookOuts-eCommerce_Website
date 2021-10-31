@@ -1,6 +1,9 @@
 import React from "react";
+// import { Checkout } from "./Checkout/Checkout";
+// import { Contact } from "./Contact/Contact";
 import { Body } from "./Home/Body";
-import { Nav } from "./Home/Nav";
+import { Nav } from "./Navbar/Nav";
+// import { ProductShow } from "./Product/ProductShow";
 // import { About } from "./OtherComponent/About";
 
 export const Home = () => {
@@ -8,7 +11,6 @@ export const Home = () => {
     <div>
       <Nav />
       <Body />
-      {/* <About /> */}
     </div>
   );
 };

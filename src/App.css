@@ -10,6 +10,9 @@
 .light-bg {
   background-image: url("./images/light-bg.png");
 }
+.other-bg {
+  background-image: url("./images/Bg-other.png");
+}
 .custom-background {
   background-position: center;
   background-repeat: no-repeat;
