@@ -1,10 +1,10 @@
 import React from "react";
+import { Footer } from "../Footer/Footer";
 import { NewsLatter } from "../Newsletter/NewsLatter";
 import { CategorySlider } from "../Swiper/CategorySlider";
 import { SwiperSlider } from "../Swiper/SwiperSlider";
 import { Carousel } from "./Carousel";
 import { DiscountBanner } from "./DiscountBanner";
-import { Footer } from "./Footer/Footer";
 import { LightCollection } from "./LightCollection";
 import { Main } from "./Main";
 import { OnSellingProduct } from "./OnSellingProduct";

@@ -1,3 +1,4 @@
+import { ArrowRightIcon } from "@heroicons/react/solid";
 import React from "react";
 import FakeData from "../../FakeData.json";
 import { ProductCard } from "../ProductCard/ProductCard";
@@ -110,10 +111,21 @@ export const Product = () => {
   return (
     <>
       <div className="bg-white">
-        <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8 text-center">
-          <h2 className="text-2xl font-extrabold tracking-tight text-gray-900">
-            New Arivel
-          </h2>
+        <div className="max-w-2xl mx-auto py-4 md:py-8 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8 text-center">
+          <div className="flex justify-between py-4 md:py-8 items-center">
+            <h2 className="text-2xl font-extrabold tracking-tight text-gray-900">
+              New Arrival
+            </h2>
+            <a
+              href="/product"
+              className="text-md font-semibold hover:text-blue-600 flex items-center"
+            >
+              See All
+              <span>
+                <ArrowRightIcon className="w-4 ml-2" />
+              </span>
+            </a>
+          </div>
 
           <div className="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-5 xl:gap-x-8">
             {Data.map((product) => (

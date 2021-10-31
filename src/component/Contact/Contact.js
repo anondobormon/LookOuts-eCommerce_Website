@@ -4,7 +4,7 @@ import {
   PhoneOutgoingIcon,
 } from "@heroicons/react/solid";
 import React from "react";
-import { Footer } from "../Home/Footer/Footer";
+import { Footer } from "../Footer/Footer";
 import { Nav } from "../Navbar/Nav";
 import { NewsLatter } from "../Newsletter/NewsLatter";
 import { OtherHeader } from "../OtherHeader/OtherHeader";

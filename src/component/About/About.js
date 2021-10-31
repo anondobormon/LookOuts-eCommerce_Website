@@ -5,7 +5,7 @@ import img3 from "../../images/About_Icon/delivery.png";
 import img1 from "../../images/About_Icon/express.png";
 import img2 from "../../images/About_Icon/real-time.png";
 import img4 from "../../images/Sofa1.png";
-import { Footer } from "../Home/Footer/Footer";
+import { Footer } from "../Footer/Footer";
 import { Nav } from "../Navbar/Nav";
 import { NewsLatter } from "../Newsletter/NewsLatter";
 import { OtherHeader } from "../OtherHeader/OtherHeader";

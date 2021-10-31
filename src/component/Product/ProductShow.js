@@ -1,6 +1,8 @@
 import React from "react";
 import FakeData from "../../FakeData.json";
-import { Footer } from "../Home/Footer/Footer";
+import { Footer } from "../Footer/Footer";
+import { Nav } from "../Navbar/Nav";
+import { NewsLatter } from "../Newsletter/NewsLatter";
 import { OtherHeader } from "../OtherHeader/OtherHeader";
 import { ProductCard } from "../ProductCard/ProductCard";
 import { SortProduct } from "./SortProduct";
@@ -70,6 +72,7 @@ const category = [
 export const ProductShow = () => {
   return (
     <>
+      <Nav />
       <OtherHeader currentPage={"About"} url={"Url"} />
       <div className="max-w-7xl m-auto gap-8 px-4 py-4 md:py-10">
         <div className="flex  justify-between">
@@ -82,6 +85,7 @@ export const ProductShow = () => {
           ))}
         </div>
       </div>
+      <NewsLatter />
       <Footer />
     </>
   );
