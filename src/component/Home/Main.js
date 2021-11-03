@@ -1,5 +1,6 @@
 import { ArrowRightIcon } from "@heroicons/react/outline";
 import React from "react";
+import { Link } from "react-router-dom";
 import { Featured } from "./Featured";
 
 export const Main = () => {
@@ -23,13 +24,13 @@ export const Main = () => {
               quibusdam <br /> consequuntur qui neque molestiae delectus numquam
               eius quod <br /> cupiditate recusandae?
             </p>
-            <a
-              href=""
+            <Link
+              to="/single-product"
               className="animate-bounce m-auto md:m-0 flex justify-center align-items-center w-32 px-5 py-1 text-gray-800 font-medium text-sm border-2 border-gray-400 hover:text-white hover:bg-indigo-600 delay-300 duration-300 ease-in-out"
             >
               <span> Only 10$</span>
               <ArrowRightIcon className="w-4 ml-1" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -46,13 +47,13 @@ export const Main = () => {
               quibusdam <br /> consequuntur qui neque molestiae delectus numquam
               eius quod <br /> cupiditate recusandae?
             </p>
-            <a
-              href=""
+            <Link
+              to="/single-product"
               className="animate-bounce m-auto flex justify-self-end align-items-center md:float-right w-32 px-5 py-1 text-gray-800 font-medium text-sm border-2 border-gray-400 hover:text-white hover:bg-indigo-600 delay-300 duration-300 ease-in-out"
             >
               <span> Only 10$</span>
               <ArrowRightIcon className="w-4 ml-1" />
-            </a>
+            </Link>
           </div>
           <div className="">
             <img

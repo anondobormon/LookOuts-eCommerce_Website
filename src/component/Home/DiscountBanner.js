@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Img from "../../images/Woman.png";
 import Img1 from "../../images/Woman1.png";
 
@@ -15,9 +16,12 @@ export const DiscountBanner = () => {
         <h4 className="my-4 text-base">
           Use this code to receive 50% discount off all Product
         </h4>
-        <button className="mt-8 bg-black px-6 py-3 text-white text-md font-bold ">
+        <Link
+          to="/product"
+          className="mt-8 bg-black px-6 py-3 text-white text-md font-bold "
+        >
           Go to Collection
-        </button>
+        </Link>
       </div>
       <img className="hidden sm:block" src={Img1} alt="" />
     </div>

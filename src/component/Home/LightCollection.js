@@ -1,5 +1,6 @@
 import { ArrowRightIcon } from "@heroicons/react/outline";
 import React from "react";
+import { Link } from "react-router-dom";
 import img from "../../images/Light.png";
 
 export const LightCollection = () => {
@@ -17,7 +18,7 @@ export const LightCollection = () => {
               autem, accusantium dignissimos vero asperiores quisquam in sequi
               reprehenderit unde doloribus.
             </p>
-            <div className=" flex text-5xl font-extrabold justify-between items-center border">
+            <div className=" flex text-5xl font-extrabold justify-between items-center">
               <div className="w-24 text-center">
                 <h1 className="text-6xl font-bold">12</h1>
                 <p className="text-2xl  font-bold">Days</p>
@@ -38,8 +39,10 @@ export const LightCollection = () => {
                 <p className="text-2xl font-bold">Second</p>
               </div>
             </div>
-            <button className="px-8 py-2 bg-black flex items-center text-white mt-8 md:mt-16">
-              Buy Now <ArrowRightIcon className="w-4 ml-2" />
+            <button className="px-8 py-2 bg-black  text-white mt-8 md:mt-16">
+              <Link to="/product" className="flex items-center">
+                Buy Now <ArrowRightIcon className="w-4 ml-2" />
+              </Link>
             </button>
           </div>
           <img className="" src={img} alt="" />

@@ -1,5 +1,4 @@
 import React from "react";
-import { Footer } from "../Home/Footer/Footer";
 import { OtherHeader } from "../OtherHeader/OtherHeader";
 import { CheckoutForm } from "./CheckoutForm";
 import { OrderSummery } from "./OrderSummery";
@@ -15,7 +14,6 @@ export const Checkout = () => {
         </div>
         <OrderSummery />
       </div>
-      <Footer />
     </>
   );
 };

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Sofa1 from "../../images/Sofa1.png";
 
 export const Carousel = () => {
@@ -25,8 +26,8 @@ export const Carousel = () => {
                 corrupti?
               </span>
             </h2>
-            <a
-              href=""
+            <Link
+              to="/product"
               className="px-5 my-4 py-2 inline-flex items-center justify-center text-base bg-indigo-600 text-white hover:bg-indigo-700"
             >
               Shop Now
@@ -44,7 +45,7 @@ export const Carousel = () => {
                   d="M17 8l4 4m0 0l-4 4m4-4H3"
                 />
               </svg>
-            </a>
+            </Link>
           </div>
 
           <div className="sm:w-3/5">

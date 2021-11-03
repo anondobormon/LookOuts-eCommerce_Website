@@ -5,7 +5,7 @@ export const Card = ({ product }) => {
   console.log(product);
   return (
     <Link
-      to="/name"
+      to="/single-product"
       className="flex h-36 border overflow-hidden items-center rounded"
     >
       <img src={product.imageSrc} alt="" className="w-36 h-full bg-gray-100" />

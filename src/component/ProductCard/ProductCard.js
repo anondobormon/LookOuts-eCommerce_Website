@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const ProductCard = ({ product }) => {
   return (
-    <div key={product.id} className="group relative">
+    <Link to="/single-product" key={product.id} className="group relative">
       <div className="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
         <img
           src={product.imageSrc}
@@ -22,6 +23,6 @@ export const ProductCard = ({ product }) => {
         </div>
         <p className="text-sm font-medium text-gray-900">{product.price}</p>
       </div>
-    </div>
+    </Link>
   );
 };

@@ -4,14 +4,13 @@ import {
   PhoneIcon,
 } from "@heroicons/react/solid";
 import React from "react";
-// import { LocationMarkerIcon } from "@heroicons/react/outline";
 
 export const Footer = () => {
   return (
     <div>
       <div className="max-w-2xl mx-auto py-4 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8 text-cente">
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
-          <div className="col-span-2 ">
+        <div className="grid grid-cols-1 text-center sm:text-left md:grid-cols-5 gap-4">
+          <div className="m-auto md:col-span-2 ">
             <h1 className="font-bold text-xl mb-2"> Address:</h1>
             <p className="flex my-3">
               <LocationMarkerIcon className="w-6 mr-2" />
