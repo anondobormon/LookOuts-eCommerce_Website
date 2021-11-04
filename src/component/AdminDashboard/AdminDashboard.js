@@ -1,14 +1,17 @@
 import React from "react";
+import { AllOrder } from "./AllOrder";
 import { MarketOverview } from "./MarketOverview";
-import { SummeryChartRow } from "./SummeryChartRow";
+import { ShortList } from "./ShortList";
 
 export const AdminDashboard = () => {
   return (
     <div>
       <h1 className="text-2xl font-bold">Welcome!</h1>
 
-      <SummeryChartRow />
+      {/* <SummeryChartRow /> */}
       <MarketOverview />
+      <ShortList />
+      <AllOrder />
       {/* <OverviewChart /> */}
     </div>
   );
