@@ -1,14 +1,15 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
+import { MenuIcon, XIcon } from "@heroicons/react/outline";
+import { ShoppingCartIcon } from "@heroicons/react/solid";
 import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
 
 const navigation = [
   { name: "Home", href: "/", current: true },
   { name: "About Us", href: "/about", current: false },
-  { name: "Contact Us", href: "contact", current: false },
-  { name: "Calendar", href: "calender", current: false },
+  { name: "Contact Us", href: "/contact", current: false },
+  { name: "Login", href: "/login", current: false },
 ];
 
 function classNames(...classes) {
@@ -17,8 +18,8 @@ function classNames(...classes) {
 
 export const Nav = () => {
   return (
-    <div>
-      <Disclosure as="nav" className="bg-purple-50">
+    <div className="navbar-sticky">
+      <Disclosure as="nav" className="">
         {({ open }) => (
           <>
             <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -63,10 +64,10 @@ export const Nav = () => {
                 <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                   <button
                     type="button"
-                    className="bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                    className="bg-gray-800 p-1 rounded-full text-gray-100 hover:text-white hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-300 focus:ring-white"
                   >
                     <span className="sr-only">View notifications</span>
-                    <BellIcon className="h-6 w-6" aria-hidden="true" />
+                    <ShoppingCartIcon className="h-6 w-6" aria-hidden="true" />
                   </button>
 
                   {/* Profile dropdown */}
@@ -76,7 +77,7 @@ export const Nav = () => {
                         <span className="sr-only">Open user menu</span>
                         <img
                           className="h-8 w-8 rounded-full"
-                          src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                          src="https://i.ibb.co/BfLNrxt/undraw-profile-pic-ic5t.png"
                           alt=""
                         />
                       </Menu.Button>

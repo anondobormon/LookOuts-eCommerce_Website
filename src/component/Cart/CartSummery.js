@@ -1,6 +1,6 @@
 import React from "react";
 
-export const CartSummery = () => {
+export const CartSummery = ({ showModal }) => {
   return (
     <div className=" my-4 p-4 border">
       <h1 className="text-xl pb-4 font-bold">Order Summery</h1>
@@ -23,7 +23,10 @@ export const CartSummery = () => {
         <h1 className="text-md font-bold">$ 570</h1>
       </div>
 
-      <button className="px-4 m-auto py-2 text-white text-md bg-black">
+      <button
+        onClick={showModal}
+        className="px-4 m-auto py-2 text-white text-md bg-black"
+      >
         Place Order
       </button>
     </div>

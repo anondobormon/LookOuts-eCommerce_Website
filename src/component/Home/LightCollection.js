@@ -40,7 +40,7 @@ export const LightCollection = () => {
               </div>
             </div>
             <button className="px-8 py-2 bg-black  text-white mt-8 md:mt-16">
-              <Link to="/product" className="flex items-center">
+              <Link to="/products" className="flex items-center">
                 Buy Now <ArrowRightIcon className="w-4 ml-2" />
               </Link>
             </button>

@@ -2,7 +2,7 @@ import React from "react";
 
 export const ProfileSetting = () => {
   return (
-    <div className="border p-4 col-span-2">
+    <div className=" p-4 col-span-2">
       <h1 className="text-xl font-bold">Profile Settings</h1>
       <div className="py-4 md:py-4">
         <form action="">
